@@ -1,13 +1,73 @@
-body {
+* {
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+.main_div{
+    width:100%;
+    height:100vh;
+    background: #aa4b6b;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.center_div{
+    width: 25%;
+    height: 70vh;
+    background-color: #f4f4f4;
+    box-shadow: 5px 5px 25px -1px  rgba(0,0,0,0.5);
+    border-radius: 15px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+h1{
+  color:rgb(31, 31, 31);
+  font-size: 60px;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-shadow: 5px 4px 4px rgba(246,234,234,0.68);
+  /* background: transparent; */
+  /* background-color: #30336b; */
+  padding: 6px 0 2px 0;
+  margin-bottom: 35px;
+  width: 100%;
+  /* box-shadow: 5px 5px 15px -5px  rgba(0,0,0,0.3); */
+}
+
+button{
+  min-height: 40px;
+  border-radius: 5%;
+  border-color: transparent;
+  /* background-color: #30336b; */
+  color: black;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  padding: 0 15px;
+  margin-top: 30px;
+  box-shadow: 10px 14px 26px 1px rgba(121, 121, 121, 0.66);
+}
+.click:hover{
+  background: #2980B9;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+.btn_green:hover{
+  color:#2ed573;
+}
+.btn_red:hover{
+  color:#d52e2e;
+}
+.btn_div{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
